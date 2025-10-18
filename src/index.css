@@ -1,0 +1,157 @@
+@import "tailwindcss";
+@import 'react-toastify/dist/ReactToastify.css';
+
+
+body {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1b4b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.glass-effect {
+  background: rgba(30, 27, 75, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Frosted white glass card */
+.glass-effect-white {
+  /* layout & shape */
+  display: block;                 /* or inline-block / flex as needed */
+  border-radius: 16px;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+
+  /* translucent white + subtle gradient */
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.10) 0%,
+    rgba(255,255,255,0.06) 50%,
+    rgba(255,255,255,0.04) 100%
+  );
+
+  /* frosted blur (works when element is over content) */
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+
+  /* crisp glass edge */
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 6px 20px rgba(2,6,23,0.6),    /* soft ambient shadow for depth */
+    inset 0 1px 0 rgba(255,255,255,0.02); /* tiny inner highlight */
+
+  /* text / content styling */
+  color: inherit; /* keep parent text color, e.g. text-gray-400 */
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+/* hover / focus micro-interaction */
+.glass-effect-white:hover,
+.glass-effect-white:focus-within {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 36px rgba(2,6,23,0.7),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.12) 0%,
+    rgba(255,255,255,0.07) 50%,
+    rgba(255,255,255,0.05) 100%
+  );
+}
+
+/* small / compact variant */
+.glass-effect-white.sm {
+  padding: 0.6rem;
+  border-radius: 12px;
+}
+
+/* accessibility: reduce heavy transparency/blur for users who prefer it */
+@media (prefers-reduced-transparency: reduce), (prefers-reduced-motion: reduce) {
+  .glass-effect-white {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255,255,255,0.06); /* subtle fallback */
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    transform: none;
+  }
+
+  .glass-effect-white:hover,
+  .glass-effect-white:focus-within {
+    transform: none;
+  }
+}
+
+/* Safari / older browsers fallback where backdrop-filter isn't supported */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-effect-white {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.08) 0%,
+      rgba(255,255,255,0.04) 100%
+    );
+  }
+}
+
+
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.hover-gradient:hover {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
