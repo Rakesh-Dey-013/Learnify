@@ -155,3 +155,6 @@ body {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Tasks from './pages/Tasks'
-import Bookmarks from './pages/Bookmarks'
 import About from './pages/About'
 import FloatingButton from './components/FloatingButton'
 import Footer from './components/Footer'
@@ -35,16 +34,6 @@ function App() {
                 transition={{ duration: 0.5 }}
               >
                 <Tasks />
-              </motion.div>
-            } />
-            <Route path="/bookmarks" element={
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Bookmarks />
               </motion.div>
             } />
             <Route path="/about" element={

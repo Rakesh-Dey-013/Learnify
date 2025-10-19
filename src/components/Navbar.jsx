@@ -10,7 +10,6 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home', icon: FiBook },
     { path: '/tasks', label: 'Tasks', icon: FiCheckSquare },
-    { path: '/bookmarks', label: 'Bookmarks', icon: FiBookmark },
     { path: '/about', label: 'About', icon: FiInfo }
   ]
 
