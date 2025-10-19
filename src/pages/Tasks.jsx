@@ -118,15 +118,15 @@ const Tasks = () => {
           transition={{ delay: 0.2 }}
           className="grid grid-cols-3 gap-4 mb-8"
         >
-          <div className="glass-effect-white rounded-2xl p-4 text-center border border-indigo-500/20">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.total}</div>
             <div className="text-gray-400 text-sm">Total Tasks</div>
           </div>
-          <div className="glass-effect rounded-2xl p-4 text-center border border-green-500/20">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.completed}</div>
             <div className="text-gray-400 text-sm">Completed</div>
           </div>
-          <div className="glass-effect rounded-2xl p-4 text-center border border-orange-500/20">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.incomplete}</div>
             <div className="text-gray-400 text-sm">Remaining</div>
           </div>
@@ -137,7 +137,7 @@ const Tasks = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="glass-effect rounded-2xl p-6 mb-8 border border-indigo-500/20"
+          className="bg-gradient-to-tr from-zinc-900 to-indigo-900/20 rounded-2xl p-6 mb-8 border border-indigo-500/20"
         >
           <div className="flex space-x-4">
             <input
@@ -200,7 +200,7 @@ const Tasks = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="glass-effect rounded-2xl p-12 text-center border border-indigo-500/20"
+                className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-12 text-center border border-indigo-500/20"
               >
                 <FiList className="text-gray-500 text-4xl mx-auto mb-4" />
                 <h3 className="text-white text-xl font-semibold mb-2">
@@ -223,7 +223,7 @@ const Tasks = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ delay: index * 0.1 }}
-                  className={`glass-effect rounded-2xl p-4 border transition-all duration-300 ${
+                  className={`bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-4 border transition-all duration-300 ${
                     task.completed
                       ? 'border-green-500/20 bg-green-500/5'
                       : 'border-indigo-500/20 hover:border-indigo-500/40'
@@ -319,7 +319,7 @@ const Tasks = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="mt-8 glass-effect rounded-2xl p-6 border border-indigo-500/20"
+            className="mt-8 bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-indigo-500/20"
           >
             <h4 className="text-white font-semibold mb-3">💡 Learning Tips</h4>
             <ul className="text-gray-400 text-sm space-y-1">

@@ -9,7 +9,7 @@ const ProfileCard = ({ member, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.2 }}
       whileHover={{ scale: 1.05 }}
-      className="bg-zinc-800/50 rounded-2xl p-6 border border-zinc-700 hover:border-zinc-500 transition-all duration-300 backdrop-blur-lg"
+      className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-zinc-700 hover:border-zinc-500 transition-all duration-300 backdrop-blur-lg"
     >
       <div className="text-center">
         <img

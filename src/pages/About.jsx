@@ -53,7 +53,7 @@ const About = () => {
           transition={{ delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
         >
-          <div className="bg-zinc-800/50 rounded-2xl p-6 border border-zinc-700 text-center">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-zinc-700 text-center">
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">🎯</span>
             </div>
@@ -63,7 +63,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-zinc-800/50 rounded-2xl p-6 border border-zinc-700 text-center">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-zinc-700 text-center">
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">📚</span>
             </div>
@@ -73,7 +73,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-zinc-800/50 rounded-2xl p-6 border border-zinc-700 text-center">
+          <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-zinc-700 text-center">
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">🚀</span>
             </div>
