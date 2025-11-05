@@ -17,8 +17,8 @@ const ProfileCard = ({ member, index }) => {
           alt={member.name}
           className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-zinc-600"
         />
-        <h3 className="text-white font-semibold text-xl mb-1">{member.name}</h3>
-        <p className="text-blue-400 mb-4">{member.role}</p>
+        <h3 className="text-white font-semibold text-3xl mb-1">{member.name}</h3>
+        <p className="text-blue-500 mb-4 text-xl">{member.role}</p>
         <p className="text-gray-400 mb-6">{member.bio}</p>
         
         <div className="flex justify-center space-x-4">

@@ -47,16 +47,16 @@ const ResourceCard = ({ resource, type, onBookmark, isBookmarked }) => {
         />
       )}
 
-      <h3 className="text-white font-semibold mb-2 line-clamp-2">
+      <h3 className="text-white font-semibold mb-2 line-clamp-2 text-xl">
         {resource.title}
       </h3>
 
       {resource.channel && (
-        <p className="text-gray-400 text-sm mb-3">{resource.channel}</p>
+        <p className="text-gray-400 text-sl mb-3">{resource.channel}</p>
       )}
 
       {resource.description && (
-        <p className="text-gray-500 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-500 text-sl mb-4 line-clamp-2">
           {resource.description}
         </p>
       )}

@@ -10,8 +10,8 @@ const About = () => {
       bio: "Passionate about creating educational technology that makes learning accessible to everyone. Loves React, Node.js, and open source.",
       image: "https://media.licdn.com/dms/image/v2/D4D03AQGeYtGQAn3PwA/profile-displayphoto-scale_200_200/B4DZnEizlPG8AY-/0/1759939085976?e=1762387200&v=beta&t=fr4eOjFyitnNnAANbnEWA8G-8vIAmVCSpbYWD3BXD-o",
       social: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
+        github: "https://github.com/Rakesh-Dey-013",
+        linkedin: "https://www.linkedin.com/in/rakeshdey007/",
         twitter: "https://twitter.com"
       }
     },
@@ -21,8 +21,8 @@ const About = () => {
       bio: "Designer with a focus on creating intuitive and beautiful user experiences. Believes good design should be both functional and delightful.",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQFHiZtI03JXCg/profile-displayphoto-crop_800_800/B4EZh6jD1cGUAI-/0/1754402669865?e=1762387200&v=beta&t=dsrOfz-EFDzRVbDaVrdj7t8kMm8wDh0JOokahDXzAYg",
       social: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
+        github: "https://github.com/Debasis098",
+        linkedin: "https://www.linkedin.com/in/debasis0221/",
         twitter: "https://twitter.com"
       }
     }
@@ -57,7 +57,7 @@ const About = () => {
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">🎯</span>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Personalized Learning</h3>
+            <h3 className="text-white font-semibold text-xl mb-2">Personalized Learning</h3>
             <p className="text-gray-400">
               AI-powered recommendations tailored to your learning style and goals
             </p>
@@ -67,7 +67,7 @@ const About = () => {
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">📚</span>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Curated Resources</h3>
+            <h3 className="text-white font-semibold text-xl mb-2">Curated Resources</h3>
             <p className="text-gray-400">
               Hand-picked videos, documentation, and tutorials from trusted sources
             </p>
@@ -77,7 +77,7 @@ const About = () => {
             <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-white font-bold text-lg">🚀</span>
             </div>
-            <h3 className="text-white font-semibold text-lg mb-2">Progress Tracking</h3>
+            <h3 className="text-white font-semibold text-xl mb-2">Progress Tracking</h3>
             <p className="text-gray-400">
               Set goals, track your progress, and celebrate your learning milestones
             </p>

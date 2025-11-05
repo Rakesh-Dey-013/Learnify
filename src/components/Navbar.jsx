@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from '../assets/machine-learning.png'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiBook, FiBookmark, FiInfo, FiMenu, FiX, FiSearch, FiCheckSquare } from 'react-icons/fi'
@@ -24,11 +25,12 @@ const Navbar = () => {
             className="flex items-center space-x-3"
           >
             <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 neon-glow">
-                <FiBook className="text-white text-lg" />
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 neon-glow">
+                <img src={logo} alt="" />
+                {/* <FiBook className="text-white text-lg" /> */}
               </div>
               <div>
-                <span className="text-2xl font-bold gradient-text text-glow">Learnify</span>
+                <span className="text-3xl font-bold gradient-text text-glow">Learnify</span>
                 <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-300 rounded-full"></div>
               </div>
             </Link>
@@ -44,7 +46,7 @@ const Navbar = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 flex items-center space-x-2 group ${
+                    className={`relative px-4 py-2 rounded-xl text-sl font-medium transition-all duration-300 flex items-center space-x-2 group ${
                       isActive
                         ? 'text-white gradient-bg shadow-lg shadow-indigo-500/25'
                         : 'text-gray-300 hover:text-white hover:bg-white/5'
@@ -95,7 +97,7 @@ const Navbar = () => {
                       key={item.path}
                       to={item.path}
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 flex items-center space-x-3 ${
+                      className={`px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 flex items-center space-x-3 ${
                         isActive
                           ? 'text-white gradient-bg shadow-lg'
                           : 'text-gray-300 hover:text-white hover:bg-white/5'

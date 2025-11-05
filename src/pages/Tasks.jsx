@@ -101,7 +101,7 @@ const Tasks = () => {
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full glass-effect border border-indigo-500/20 mb-6">
             <FiList className="text-indigo-400 mr-2" />
-            <span className="text-sm text-gray-300">Daily Learning Tasks</span>
+            <span className="text-sl text-gray-300">Daily Learning Tasks</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Your <span className="gradient-text">Tasks</span>
@@ -120,15 +120,15 @@ const Tasks = () => {
         >
           <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.total}</div>
-            <div className="text-gray-400 text-sm">Total Tasks</div>
+            <div className="text-gray-400 text-sl">Total Tasks</div>
           </div>
           <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.completed}</div>
-            <div className="text-gray-400 text-sm">Completed</div>
+            <div className="text-gray-400 text-sl">Completed</div>
           </div>
           <div className="bg-gradient-to-tr from-zinc-900 to-violet-700/5 border border-zinc-600 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-lg p-4 text-center">
             <div className="text-2xl font-bold text-white">{stats.incomplete}</div>
-            <div className="text-gray-400 text-sm">Remaining</div>
+            <div className="text-gray-400 text-sl">Remaining</div>
           </div>
         </motion.div>
 
@@ -223,7 +223,7 @@ const Tasks = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ delay: index * 0.1 }}
-                  className={`bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-4 border transition-all duration-300 ${
+                  className={`bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-4 border transition-all duration-300 text-xl ${
                     task.completed
                       ? 'border-green-500/20 bg-green-500/5'
                       : 'border-indigo-500/20 hover:border-indigo-500/40'
@@ -321,8 +321,8 @@ const Tasks = () => {
             transition={{ delay: 0.6 }}
             className="mt-8 bg-gradient-to-tr from-zinc-900 to-violet-700/5 rounded-2xl p-6 border border-indigo-500/20"
           >
-            <h4 className="text-white font-semibold mb-3">💡 Learning Tips</h4>
-            <ul className="text-gray-400 text-sm space-y-1">
+            <h4 className="text-white font-semibold mb-3 text-xl">💡 Learning Tips</h4>
+            <ul className="text-gray-400 text-sl space-y-1">
               <li>• Break complex topics into smaller, manageable tasks</li>
               <li>• Set realistic daily goals to maintain consistency</li>
               <li>• Review completed tasks to track your progress</li>
