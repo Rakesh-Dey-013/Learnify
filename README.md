@@ -4,7 +4,7 @@
 Search any topic and instantly get the best tutorial videos, official documentation, and AI-powered explanations.  
 Organize your daily learning tasks, bookmark useful resources, and chat with **Gemini AI** — all in one place. 🚀
 
-### 🌐 Live Demo: [Learnify](https://rakesh-dey-013.github.io/Learnify/)
+### 🌐 Live Demo: [Learnify](https://learnify-beige.vercel.app/)
 
 ---
 
