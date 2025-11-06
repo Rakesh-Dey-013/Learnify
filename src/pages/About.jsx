@@ -1,6 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ProfileCard from '../components/ProfileCard'
+import rakesh from '../assets/rakesh.jpeg'
+import debasis from '../assets/debasis.jpeg'
+import akash from '../assets/akash.jpg'
+import subho from '../assets/subho.jpg'
 
 const About = () => {
   const teamMembers = [
@@ -8,7 +12,7 @@ const About = () => {
       name: "Rakesh Kr. Dey",
       role: "MERN Stack Developer",
       bio: "Passionate about creating educational technology that makes learning accessible to everyone. Loves React, Node.js, and open source.",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQGeYtGQAn3PwA/profile-displayphoto-scale_200_200/B4DZnEizlPG8AY-/0/1759939085976?e=1762387200&v=beta&t=fr4eOjFyitnNnAANbnEWA8G-8vIAmVCSpbYWD3BXD-o",
+      image: rakesh,
       social: {
         github: "https://github.com/Rakesh-Dey-013",
         linkedin: "https://www.linkedin.com/in/rakeshdey007/",
@@ -19,10 +23,32 @@ const About = () => {
       name: "Debasis Ruidas",
       role: "MERN Stack Developer",
       bio: "Designer with a focus on creating intuitive and beautiful user experiences. Believes good design should be both functional and delightful.",
-      image: "https://media.licdn.com/dms/image/v2/D4E03AQFHiZtI03JXCg/profile-displayphoto-crop_800_800/B4EZh6jD1cGUAI-/0/1754402669865?e=1762387200&v=beta&t=dsrOfz-EFDzRVbDaVrdj7t8kMm8wDh0JOokahDXzAYg",
+      image: debasis,
       social: {
         github: "https://github.com/Debasis098",
         linkedin: "https://www.linkedin.com/in/debasis0221/",
+        twitter: "https://twitter.com"
+      }
+    },
+    {
+      name: "Akash Akuli",
+      role: "frontend Developer",
+      bio: "Frontend Developer skilled in creating responsive, user-focused web interfaces with modern technologies.",
+      image: akash,
+      social: {
+        github: "https://github.com/",
+        linkedin: "https://www.linkedin.com/",
+        twitter: "https://twitter.com"
+      }
+    },
+    {
+      name: "Subhojit Gorai",
+      role: "Frontend Developer",
+      bio: "Frontend Developer focused on crafting seamless, responsive, and accessible digital experiences.",
+      image: subho,
+      social: {
+        github: "https://github.com/",
+        linkedin: "https://www.linkedin.com/",
         twitter: "https://twitter.com"
       }
     }
