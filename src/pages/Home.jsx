@@ -121,7 +121,7 @@ const Home = () => {
           >
             <div className="inline-flex items-center px-4 py-2 rounded-full glass-effect border border-indigo-500/20 mb-6">
               <FiStar className="text-yellow-400 mr-2" />
-              <span className="text-sm text-gray-300">The Future of Learning is Here</span>
+              <span className="text-sl text-gray-300">The Future of Learning is Here</span>
             </div>
           </motion.div>
 
