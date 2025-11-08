@@ -31,7 +31,7 @@ const About = () => {
       }
     },
     {
-      name: "Akash Akuli",
+      name: "Akash Akhuli",
       role: "frontend Developer",
       bio: "Frontend Developer skilled in creating responsive, user-focused web interfaces with modern technologies.",
       image: akash,
@@ -42,7 +42,7 @@ const About = () => {
       }
     },
     {
-      name: "Subhojit Gorai",
+      name: "Shubhajit Gorai",
       role: "Frontend Developer",
       bio: "Frontend Developer focused on crafting seamless, responsive, and accessible digital experiences.",
       image: subho,
